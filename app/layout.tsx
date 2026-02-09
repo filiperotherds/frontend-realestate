@@ -8,7 +8,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Base | Seu portal imobiliário",
+  title: "Base Brasil | Sua base imobiliária",
 };
 
 export default function RootLayout({
@@ -17,8 +17,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${inter.variable} antialiased`}>
+    <html lang="pt-br">
+      <body className={`${inter.variable} antialiased scroll-smooth`}>
         {children}
       </body>
     </html>
