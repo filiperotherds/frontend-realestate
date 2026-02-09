@@ -8,8 +8,7 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-inter);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,5 +21,18 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-inter);
+}
+
+.mesh-gradient {
+  background-color: #ffffff;
+  background-image: 
+    radial-gradient(at 86% 14%, hsla(28,100%,74%,1) 0px, transparent 50%),
+    radial-gradient(at 10% 20%, hsla(326,100%,76%,1) 0px, transparent 50%),
+    radial-gradient(at 80% 10%, hsla(11,100%,76%,1) 0px, transparent 50%),
+    radial-gradient(at 90% 90%, hsla(290,100%,74%,1) 0px, transparent 50%),
+    radial-gradient(at 15% 90%, hsla(263,100%,68%,1) 0px, transparent 50%),
+    radial-gradient(at 51% 51%, hsla(339,100%,76%,1) 0px, transparent 50%);
+  filter: blur(80px); /* Soften the edges significantly */
+  opacity: 0.6;
 }
