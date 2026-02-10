@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { Inter, Geist_Mono } from "next/font/google";
+import { Inter } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
 const inter = Inter({
@@ -7,8 +8,25 @@ const inter = Inter({
   subsets: ["latin"],
 });
 
+const radioGrotesk = localFont({
+  src: "../public/pp-radio-grotesk-regular.woff2",
+  variable: "--font-radio-grotesk",
+});
+
 export const metadata: Metadata = {
   title: "Base Brasil | Sua base imobiliária",
+  icons: {
+    icon: [
+      {
+        url: "/icon-light.ico",
+        media: "(prefers-color-scheme: light)",
+      },
+      {
+        url: "/icon-dark.ico",
+        media: "(prefers-color-scheme: dark)",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
@@ -18,7 +36,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <body className={`${inter.variable} antialiased scroll-smooth`}>
+      <body
+        className={`${inter.variable} ${radioGrotesk.variable} antialiased scroll-smooth`}
+      >
         {children}
       </body>
     </html>
