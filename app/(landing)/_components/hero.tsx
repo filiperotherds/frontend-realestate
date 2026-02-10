@@ -1,5 +1,12 @@
 import Link from "next/link";
-import { ArrowRight, CreditCard, Search, Sparkles } from "lucide-react";
+import {
+  ArrowRight,
+  CreditCard,
+  Heart,
+  Search,
+  Share,
+  Sparkles,
+} from "lucide-react";
 import {
   Avatar,
   AvatarFallback,
@@ -7,6 +14,7 @@ import {
   AvatarImage,
 } from "../../../components/ui/avatar";
 import backgroundImage from "@/assets/background_0.png";
+import apartmentImage from "@/assets/apartment.png";
 
 export function Hero() {
   return (
@@ -104,14 +112,37 @@ export function Hero() {
                   </svg>
 
                   <span className="text-[11px] text-primary">
-                    Entre em contato
+                    Entre em Contato
                   </span>
                 </div>
               </div>
 
               <div className="w-full p-8 flex flex-wrap items-center justify-center gap-4">
                 <div className="flex flex-col items-start justify-start gap-0.5">
-                  <div className="w-56 h-40 bg-neutral-200 rounded-lg"></div>
+                  <div
+                    className="relative w-56 h-40 rounded-lg bg-cover bg-center"
+                    style={{ backgroundImage: `url(${apartmentImage.src})` }}
+                  >
+                    <div className="absolute top-0 left-0 p-2 w-full flex flex-row items-center justify-between">
+                      <div className="px-2 py-0.5 rounded-sm bg-white text-[10px] text-primary">
+                        Aluguel
+                      </div>
+
+                      <Share
+                        size={16}
+                        strokeWidth={2.5}
+                        className="text-white mx-2"
+                      />
+                    </div>
+
+                    <div className="absolute bottom-2 left-0 w-full flex items-center justify-center gap-2">
+                      <div className="size-2 rounded-full bg-white/50" />
+                      <div className="size-2 rounded-full bg-white" />
+                      <div className="size-2 rounded-full bg-white/50" />
+                      <div className="size-2 rounded-full bg-white/50" />
+                      <div className="size-2 rounded-full bg-white/50" />
+                    </div>
+                  </div>
 
                   <div className="w-full flex flex-row items-center justify-between pt-2">
                     <div className="flex flex-row items-center gap-2">
@@ -137,7 +168,30 @@ export function Hero() {
                 </div>
 
                 <div className="flex flex-col items-start justify-start gap-0.5">
-                  <div className="w-56 h-40 bg-neutral-200 rounded-lg"></div>
+                  <div
+                    className="relative w-56 h-40 rounded-lg bg-cover bg-center"
+                    style={{ backgroundImage: `url(${apartmentImage.src})` }}
+                  >
+                    <div className="absolute top-0 left-0 p-2 w-full flex flex-row items-center justify-between">
+                      <div className="px-2 py-0.5 rounded-sm bg-white text-[10px] text-primary">
+                        Aluguel
+                      </div>
+
+                      <Share
+                        size={16}
+                        strokeWidth={2.5}
+                        className="text-white mx-2"
+                      />
+                    </div>
+
+                    <div className="absolute bottom-2 left-0 w-full flex items-center justify-center gap-2">
+                      <div className="size-2 rounded-full bg-white/50" />
+                      <div className="size-2 rounded-full bg-white" />
+                      <div className="size-2 rounded-full bg-white/50" />
+                      <div className="size-2 rounded-full bg-white/50" />
+                      <div className="size-2 rounded-full bg-white/50" />
+                    </div>
+                  </div>
 
                   <div className="w-full flex flex-row items-center justify-between pt-2">
                     <div className="flex flex-row items-center gap-2">
@@ -163,7 +217,30 @@ export function Hero() {
                 </div>
 
                 <div className="flex flex-col items-start justify-start gap-0.5">
-                  <div className="w-56 h-40 bg-neutral-200 rounded-lg"></div>
+                  <div
+                    className="relative w-56 h-40 rounded-lg bg-cover bg-center"
+                    style={{ backgroundImage: `url(${apartmentImage.src})` }}
+                  >
+                    <div className="absolute top-0 left-0 p-2 w-full flex flex-row items-center justify-between">
+                      <div className="px-2 py-0.5 rounded-sm bg-white text-[10px] text-primary">
+                        Aluguel
+                      </div>
+
+                      <Share
+                        size={16}
+                        strokeWidth={2.5}
+                        className="text-white mx-2"
+                      />
+                    </div>
+
+                    <div className="absolute bottom-2 left-0 w-full flex items-center justify-center gap-2">
+                      <div className="size-2 rounded-full bg-white/50" />
+                      <div className="size-2 rounded-full bg-white" />
+                      <div className="size-2 rounded-full bg-white/50" />
+                      <div className="size-2 rounded-full bg-white/50" />
+                      <div className="size-2 rounded-full bg-white/50" />
+                    </div>
+                  </div>
 
                   <div className="w-full flex flex-row items-center justify-between pt-2">
                     <div className="flex flex-row items-center gap-2">
@@ -189,7 +266,30 @@ export function Hero() {
                 </div>
 
                 <div className="flex flex-col items-start justify-start gap-0.5">
-                  <div className="w-56 h-40 bg-neutral-200 rounded-lg"></div>
+                  <div
+                    className="relative w-56 h-40 rounded-lg bg-cover bg-center"
+                    style={{ backgroundImage: `url(${apartmentImage.src})` }}
+                  >
+                    <div className="absolute top-0 left-0 p-2 w-full flex flex-row items-center justify-between">
+                      <div className="px-2 py-0.5 rounded-sm bg-white text-[10px] text-primary">
+                        Aluguel
+                      </div>
+
+                      <Share
+                        size={16}
+                        strokeWidth={2.5}
+                        className="text-white mx-2"
+                      />
+                    </div>
+
+                    <div className="absolute bottom-2 left-0 w-full flex items-center justify-center gap-2">
+                      <div className="size-2 rounded-full bg-white/50" />
+                      <div className="size-2 rounded-full bg-white" />
+                      <div className="size-2 rounded-full bg-white/50" />
+                      <div className="size-2 rounded-full bg-white/50" />
+                      <div className="size-2 rounded-full bg-white/50" />
+                    </div>
+                  </div>
 
                   <div className="w-full flex flex-row items-center justify-between pt-2">
                     <div className="flex flex-row items-center gap-2">
@@ -215,7 +315,30 @@ export function Hero() {
                 </div>
 
                 <div className="flex flex-col items-start justify-start gap-0.5">
-                  <div className="w-56 h-40 bg-neutral-200 rounded-lg"></div>
+                  <div
+                    className="relative w-56 h-40 rounded-lg bg-cover bg-center"
+                    style={{ backgroundImage: `url(${apartmentImage.src})` }}
+                  >
+                    <div className="absolute top-0 left-0 p-2 w-full flex flex-row items-center justify-between">
+                      <div className="px-2 py-0.5 rounded-sm bg-white text-[10px] text-primary">
+                        Aluguel
+                      </div>
+
+                      <Share
+                        size={16}
+                        strokeWidth={2.5}
+                        className="text-white mx-2"
+                      />
+                    </div>
+
+                    <div className="absolute bottom-2 left-0 w-full flex items-center justify-center gap-2">
+                      <div className="size-2 rounded-full bg-white/50" />
+                      <div className="size-2 rounded-full bg-white" />
+                      <div className="size-2 rounded-full bg-white/50" />
+                      <div className="size-2 rounded-full bg-white/50" />
+                      <div className="size-2 rounded-full bg-white/50" />
+                    </div>
+                  </div>
 
                   <div className="w-full flex flex-row items-center justify-between pt-2">
                     <div className="flex flex-row items-center gap-2">
@@ -241,7 +364,30 @@ export function Hero() {
                 </div>
 
                 <div className="flex flex-col items-start justify-start gap-0.5">
-                  <div className="w-56 h-40 bg-neutral-200 rounded-lg"></div>
+                  <div
+                    className="relative w-56 h-40 rounded-lg bg-cover bg-center"
+                    style={{ backgroundImage: `url(${apartmentImage.src})` }}
+                  >
+                    <div className="absolute top-0 left-0 p-2 w-full flex flex-row items-center justify-between">
+                      <div className="px-2 py-0.5 rounded-sm bg-white text-[10px] text-primary">
+                        Aluguel
+                      </div>
+
+                      <Share
+                        size={16}
+                        strokeWidth={2.5}
+                        className="text-white mx-2"
+                      />
+                    </div>
+
+                    <div className="absolute bottom-2 left-0 w-full flex items-center justify-center gap-2">
+                      <div className="size-2 rounded-full bg-white/50" />
+                      <div className="size-2 rounded-full bg-white" />
+                      <div className="size-2 rounded-full bg-white/50" />
+                      <div className="size-2 rounded-full bg-white/50" />
+                      <div className="size-2 rounded-full bg-white/50" />
+                    </div>
+                  </div>
 
                   <div className="w-full flex flex-row items-center justify-between pt-2">
                     <div className="flex flex-row items-center gap-2">
