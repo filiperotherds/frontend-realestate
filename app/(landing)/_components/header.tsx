@@ -16,13 +16,13 @@ export function Header() {
       </div>
 
       <div className="flex flex-row items-center gap-4">
-        <Link href="/login">
+        <Link href="/sign-in">
           <Button variant={"link"} size={"default"} className="cursor-pointer">
             Entrar
           </Button>
         </Link>
 
-        <Link href="/signup">
+        <Link href="/sign-up">
           <Button
             variant={"default"}
             size={"default"}

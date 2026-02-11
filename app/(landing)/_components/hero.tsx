@@ -18,7 +18,7 @@ import apartmentImage from "@/assets/apartment.png";
 
 export function Hero() {
   return (
-    <section className="w-full p-8 pt-16">
+    <section className="w-full p-8 py-16">
       <div className="w-full flex flex-col items-center justify-center gap-8">
         <div className="flex flex-row items-center justify-center gap-4">
           <AvatarGroup className="grayscale">
@@ -59,12 +59,12 @@ export function Hero() {
         </h1>
         <p className="text-muted-foreground text-lg max-w-[720px] text-center font-grotesk">
           Website personalizado, CRM especializado e Inteligência Artificial
-          aplicada em leads - Ambiente profissional completo para corretores e
-          imobiliárias.
+          aplicada aos indicadores do mercado - Ambiente profissional completo
+          para corretores e imobiliárias.
         </p>
 
         <div className="flex flex-col items-center justify-center gap-4">
-          <Link href="/signup">
+          <Link href="/sign-up">
             <button className="h-12 pl-6 pr-2 flex items-center justify-center gap-6 bg-primary text-white text-sm rounded-full hover:bg-primary/80 transition-colors cursor-pointer">
               Comece Grátis
               <div className="size-8 rounded-full bg-white text-primary flex items-center justify-center">
@@ -84,7 +84,7 @@ export function Hero() {
           style={{ backgroundImage: `url(${backgroundImage.src})` }}
         >
           <div className="w-full h-full flex items-center justify-center p-20 pb-0 bg-linear-to-b from-transparent via-background/50 to-background pointer-events-none">
-            <div className="relative w-full aspect-video rounded-lg bg-white/85 backdrop-blur-sm">
+            <div className="relative w-full aspect-video rounded-lg bg-white/85 backdrop-blur-sm overflow-hidden">
               <div className="w-full h-16 flex flex-row items-center justify-between px-8 border-b border-border">
                 <div className="flex flex-row items-center justify-between gap-6">
                   <h1 className="font-grotesk text-sm font-extrabold">
@@ -412,17 +412,6 @@ export function Hero() {
                   </span>
                 </div>
               </div>
-
-              <div className="absolute z-30 bottom-20 left-20 flex flex-col gap-2 text-primary">
-                <h1 className="font-grotesk text-6xl">
-                  Sua Vitrine <br /> Profissional
-                </h1>
-                <span className="font-grotesk text-xl">
-                  Para profissionais de elite.
-                </span>
-              </div>
-
-              <div className="absolute top-0 left-0 z-20 w-full h-full bg-linear-to-tr from-background via-background/35 to-transparent" />
             </div>
           </div>
         </div>

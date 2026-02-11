@@ -35,9 +35,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-br">
+    <html lang="pt-br" className="scroll-smooth">
       <body
-        className={`${inter.variable} ${radioGrotesk.variable} antialiased scroll-smooth`}
+        className={`${inter.variable} ${radioGrotesk.variable} antialiased`}
       >
         {children}
       </body>
